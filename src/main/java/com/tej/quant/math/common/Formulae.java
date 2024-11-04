@@ -48,7 +48,7 @@ public class Formulae {
         assert samples.length > 0;
         double sum = 0;
         for(double sample : samples) {
-            sum += Math.pow(sample,2) - Math.pow(average(samples), -2);
+            sum += Math.pow(sample,2) - Math.pow(average(samples), 2);
         }
         return sum/samples.length;
     }
