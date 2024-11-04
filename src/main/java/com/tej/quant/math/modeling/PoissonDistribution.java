@@ -12,4 +12,9 @@ public class PoissonDistribution implements Distribution {
         assert eventRate >= 0;
         return (Math.pow(Math.E, -1 * eventRate) * Math.pow(eventRate, x)) / factorial(x);
     }
+
+    @Override
+    public void plot() {
+
+    }
 }
